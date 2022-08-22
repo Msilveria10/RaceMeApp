@@ -53,7 +53,9 @@ struct HomeScreenView: View {
                 
             }
         }
+        // This is a comment to show 
     }
+    // MARK: Methods
     
 }
 
