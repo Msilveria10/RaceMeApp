@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+
+    // MARK: Properties
     
     @State var showCountDownView = false
     @State var showGameplay = GamePlayView()
 
     var body: some View {
-        // MARK: Navigation
-        
-        
-        
+
         NavigationView {
             
             VStack {
