@@ -21,30 +21,30 @@ struct CountDownView: View {
         // MARK: NAV
         
         NavigationView {
+            
+            VStack {
                 
-                VStack {
-                    
-                    Text("Game Starts in!")
-                        .foregroundColor(.blue)
-                        .font(.largeTitle)
-                        .bold()
-                    
-                    Text("\(countDownTimer)")
-                        .font(.system(size: 100)).foregroundColor(Color.blue).bold()
-                        .padding(.bottom,200)
-                        .onReceive(timer) {_ in
-                            if countDownTimer > 0 && timerRunning {
-                                countDownTimer -= 1
-                            } else {
-                                timerRunning = false
-                            }
+                Text("Game Starts in!")
+                    .foregroundColor(.blue)
+                    .font(.largeTitle)
+                    .bold()
+                
+                Text("\(countDownTimer)")
+                    .font(.system(size: 100)).foregroundColor(Color.blue).bold()
+                    .padding(.bottom,200)
+                    .onReceive(timer) {_ in
+                        if countDownTimer > 0 && timerRunning {
+                            countDownTimer -= 1
+                        } else {
+                            timerRunning = false
                         }
                     }
-                }
-    }
-    
-    
+            }
         }
+    }
+    // MARK: Methods
+    
+}
 
 
 

@@ -33,7 +33,6 @@ struct HomeScreenView: View {
                         .font(.system(size: 24.0))
                 }
                 Spacer()
-                
                 Button(action: {
                     showCountDownView = true
                 }) {
